@@ -24,7 +24,7 @@ function mostrarMensajeDos() {
     const parametroPeso = 70
     let mensajeDecision = ""
 
-
+    //If anidado
     // if (edadP <= parametroEdad) {
     //     if (estaturaP >= parametroEstatura) {
     //         if (pesoP == parametroPeso) {
@@ -56,4 +56,69 @@ function mostrarMensajeDos() {
     }
 
     alert(mensajeDecision)
+}
+
+function mostrarMensajeTres() {
+    let productName = document.getElementById('ProductName').value
+    let price = 0
+
+    const product_one = 'A'
+    const product_two = 'B'
+    const product_three = 'C'
+    const message = 'Invalid Product!!'
+
+    /*if (productName.toUpperCase() == product_one) {
+        price = 2000
+    } else {                          
+        if (productName.toUpperCase() == product_two) {
+            price = 2200
+        } else {
+            if (productName.toUpperCase() == product_three) {
+                price = 1800
+            } else {
+                alert(message.toUpperCase())
+            }
+        }
+    }
+
+    alert(price)*/
+
+
+    switch (productName.toUpperCase()) {
+        case product_one:
+            price = 20000
+            break;
+        case product_two:
+            price = 22000
+            break;
+        case product_three:
+            price = 18000
+            break;
+        default:
+            alert(message.toUpperCase())
+            break;
+    }
+
+    alert(Intl.NumberFormat().format(price))
+
+
+
+}
+
+//function prenderApagar(interruptor) 
+
+let prenderApagar = interruptor =>{
+
+    let pic 
+
+    /*if (interruptor == 0) {
+        alert('OFF')
+    } else {
+        alert('ON')
+    }*/
+
+    let mensaje = (interruptor == 0) ? "OFF" : "ON"
+
+    alert(mensaje)
+
 }
