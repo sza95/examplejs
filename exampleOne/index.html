@@ -39,7 +39,8 @@
             <button type="button" onclick="mostrarMensaje()">Mostrar</button>
         </form>
     </section>
-    <br><hr>
+    <br>
+    <hr>
     <section>
         <h2>If Anidado</h2>
         <form>
@@ -55,7 +56,8 @@
             <button type="button" onclick="mostrarMensajeDos()">Mostrar</button>
         </form>
     </section>
-    <br><hr>
+    <br>
+    <hr>
     <section>
         <h2>If & Case</h2>
         <form>
@@ -65,7 +67,8 @@
             <button type="button" onclick="mostrarMensajeTres()">Mostrar</button>
         </form>
     </section>
-    <br><hr>
+    <br>
+    <hr>
     <section>
         <h2>Funciones y parametros</h2>
         <form>
@@ -73,6 +76,53 @@
             <button type="button" onclick="prenderApagar(0)">Apagar</button>
         </form>
     </section>
+    <br><hr>
+    <section>
+        <h2>Bucle for</h2>
+        <script>
+            /*for (let people = 1; people <= 3 ; people++) {
+             
+                let age = prompt('Enter your age: ')
+
+                let ageParameter = 18
+
+                let message = (age >= ageParameter) ? "You're an adult" : "You're a kid"
+
+                alert(message)
+                
+            }*/
+
+            let cars = ["Toyota","Chevrolet","Audi","Mazda","Ford"]
+
+            for (let brands = 0; brands < cars.length; brands++) {
+
+                const viewCars = `${cars[brands]}<br>`
+                document.write(viewCars)
+            }
+            document.write(`<br>El vehiculo es: ${cars[2]}`)
+
+
+        </script>
+    </section>
+    <br><hr>
+    <section>
+        <h2>Bucle while</h2>
+        <script>
+
+            let student = () => {
+                let studentName = ""
+                let paramName = "NN"
+
+                while (studentName.toUpperCase() != paramName) {
+                    studentName = prompt("Enter your name: ")
+                    alert(`Your name is: ${studentName}, you have been registered`)
+                }
+            }
+
+            student()
+        </script>
+    </section>
+
 </body>
 
 </html>
